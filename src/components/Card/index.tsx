@@ -87,11 +87,11 @@ export function Card(props:IProps) {
   return(
     <Box
       p={5}
-      borderWidth={2}
+      borderWidth={3}
       borderRadius={5}
       minW="300"
-      bg={changeColor(props.car.color)}
-      color={props.car.color}
+      borderColor={changeColor(props.car.color)}
+      // color={props.car.color}
     >
 
       <Text>{props.car.model}</Text>

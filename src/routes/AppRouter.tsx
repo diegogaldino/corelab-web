@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { AddEditCar } from "../components/AddEditCar.tsx";
-import { Header } from "../components/Header";
 import { Car } from "../pages/Car";
 
 export function AppRouter() {

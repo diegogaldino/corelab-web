@@ -42,7 +42,7 @@ export function AddEditCar() {
 
   async function getCar() {
     try {
-      console.log("1e43r", location.state && location.state)
+
       const result = await axios.get(`${baseURL}/cars/${location.state}`)
 
       if (result.data) {
@@ -57,7 +57,7 @@ export function AddEditCar() {
         setPrice(result.data.price)
       }
 
-      console.log("=============", result.data)
+
     } catch (error) {
 
     }
@@ -80,7 +80,7 @@ export function AddEditCar() {
         year,
         price,
       }
-      console.log("dseef", location.state,form)
+
       
       if (location.state) {
         await axios.put(`${baseURL}/cars`, form)
